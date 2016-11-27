@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Pizzahut</string>
+    <string-array name="car_model">
+        <item>Bacon</item>
+        <item>Cheese</item>
+        <item>Chicken</item>
+        <item>Mushroom</item>
+        <item>Peperoni</item>
+        <item>Pineapple</item>
+        <item>Banana</item>
+        <item>Mango</item>
+        <item>Orange</item>
+        <item>abc</item>
+        <item>sdasd</item>
+        <item>Volkdgen</item>
+    </string-array>
+    <string name="spinner_prompt"></string>
+</resources>

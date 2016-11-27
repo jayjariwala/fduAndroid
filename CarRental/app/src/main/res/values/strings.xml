@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CarRental</string>
+    <string-array name="car_model">
+        <item>Chevorlet</item>
+        <item>Chrysler</item>
+        <item>Dodge</item>
+        <item>Ford</item>
+        <item>GMC</item>
+        <item>Honda</item>
+        <item>Hundai</item>
+        <item>Kia</item>
+        <item>Mazda</item>
+        <item>Nissan</item>
+        <item>Toyota</item>
+        <item>Volkswagen</item>
+    </string-array>
+   <string name="spinner_prompt"></string>
+</resources>

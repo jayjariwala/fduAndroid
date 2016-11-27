@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PizzaRestaurant</string>
+    <string-array name="array_toppings">
+        <item>Bacon</item>
+        <item>Cheese</item>
+        <item>Chicken</item>
+        <item>Mushroom</item>
+        <item>Pepperoni</item>
+        <item>Pineapple</item>
+        <item>Sausage</item>
+    </string-array>
+    <string name="spinner_prompt">Select a topping</string>
+
+</resources>
+
