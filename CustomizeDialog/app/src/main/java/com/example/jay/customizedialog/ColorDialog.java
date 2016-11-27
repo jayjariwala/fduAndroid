@@ -34,6 +34,9 @@ public class ColorDialog extends Dialog {
         Blueseek =(SeekBar)findViewById(R.id.seekBar6);
         done = (Button) findViewById(R.id.button3);
         cancel = (Button) findViewById(R.id.button4);
+        RedText = (TextView) findViewById(R.id.textView);
+        GreenText = ( TextView) findViewById(R.id.textView2);
+        BlueText = (TextView) findViewById(R.id.textView4);
 
         Redseek.setOnSeekBarChangeListener(colorSeekBarChanged);
         Greenseek.setOnSeekBarChangeListener(colorSeekBarChanged);
@@ -43,6 +46,7 @@ public class ColorDialog extends Dialog {
             @Override
             public void onClick(View v) {
                 color= Color.argb(255,Redseek.getProgress(), Greenseek.getProgress(),Blueseek.getProgress());
+                System.out.println("Color:"+color);
                 dismiss();
             }
         });
@@ -53,10 +57,6 @@ public class ColorDialog extends Dialog {
                 cancel();
             }
         });
-
-
-
-
 
 
     }

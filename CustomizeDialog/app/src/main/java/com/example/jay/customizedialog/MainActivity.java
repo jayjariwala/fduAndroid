@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         colorDlg = new ColorDialog(this);
-        text = (TextView) findViewById(R.id.textView2);
-        btnColor = (Button) findViewById(R.id.button3);
-      /*  btnColor.setOnClickListener(new View.OnClickListener() {
+        text = (TextView) findViewById(R.id.textView3);
+        btnColor = (Button) findViewById(R.id.button2);
+        btnColor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 colorDlg.show();
@@ -33,6 +33,6 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         });
-            */
+
     }
 }
