@@ -23,11 +23,13 @@ public class MainActivity extends AppCompatActivity {
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 timer= new setTimer();
+                start.setText("Pause");
                 String buttontext= start.getText().toString();
                 long timelepsed= System.currentTimeMillis();
                 timer.execute(""+timelepsed,buttontext);
-                start.setText("STOP");
+
             }
         });
 
@@ -48,9 +50,12 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-                if (!isCancelled()) {
+                while (!isCancelled()) {
 
-
+                            if(params[1].toString().equals("PAUSE"))
+                            {
+                                System.out.println("Print something");
+                            }
 
                             System.out.println("The String"+params[1]);
                             long Starttime=Long.parseLong(params[0]);
@@ -63,16 +68,10 @@ public class MainActivity extends AppCompatActivity {
                             publishProgress(hr,minutes,seconds,hundreths);
 
 
-
-
-
-
-
                 }
-                else
+
                     return "Cancelled";
 
-            return "Complete";
 
         }
 
@@ -90,9 +89,10 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onCancelled() {
+            super.onCancelled();
             String stopwatch= String.format("%02d:%02d:%02d.%02d",0,0,0,0);
             t1.setText(stopwatch);
-            super.onCancelled();
+
 
         }
 
